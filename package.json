@@ -1,6 +1,6 @@
 {
   "name": "hydro.pdf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PDF preview plugin for Hydro, using PDF.js",
   "main": "package.json",
   "repository": "https://github.com/Ri-moe/hydro.pdf.git",
