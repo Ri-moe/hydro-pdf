@@ -53,4 +53,15 @@ pm2 restart hydrooj
 
 ## 配置
 
-hydro.pdf 提供 `loadingPath` 配置项，用于自定义资源加载来源，默认为 jsDelivr 源，留空将自动使用本地源。你也可以自定义其他加载源。
+hydro.pdf 提供 `loadingPath` 配置项，用于自定义资源加载来源，默认为 jsDelivr 源，留空将自动使用本地源。你也可以自定义其他加载源，但须注意你的加载源应该具有以下目录结构：
+
+```plain
+<自定义加载源>
+├───cmaps
+├───css
+├───images
+├───js
+└───locale
+```
+
+自定义加载源的 URL 不必以 `/` 结尾。
