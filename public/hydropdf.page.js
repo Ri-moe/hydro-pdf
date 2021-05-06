@@ -8,7 +8,7 @@
             $(element).attr('id', id);
             const url = new URL($(element).text(), window.location.href);
             const iframe = document.createElement('iframe');
-            iframe.src = `/hydro.pdf/${encodeURIComponent(encodeURIComponent(url)).replace(/\\/g, "\\\\").replace(/'/g, "\\'")}`;
+            iframe.src = `/hydro.pdf/${encodeURIComponent(encodeURIComponent(url))}`;
             iframe.width = '100%';
             iframe.style.minHeight = '100vh';
             iframe.style.border = 'none';

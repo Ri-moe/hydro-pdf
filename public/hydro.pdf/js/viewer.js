@@ -97,7 +97,7 @@ const defaultOptions = {
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE
   },
   imageResourcesPath: {
-    value: "/hydro.pdf/images/",
+    value: window.loadingPath + "/images/",
     kind: OptionKind.VIEWER
   },
   maxCanvasPixels: {
@@ -154,7 +154,7 @@ const defaultOptions = {
     kind: OptionKind.API
   },
   cMapUrl: {
-    value: "/hydro.pdf/cmaps/",
+    value: window.loadingPath + "/cmaps/",
     kind: OptionKind.API
   },
   disableAutoFetch: {
@@ -206,7 +206,7 @@ const defaultOptions = {
     kind: OptionKind.WORKER
   },
   workerSrc: {
-    value: "/hydro.pdf/js/pdf.worker.js",
+    value: window.loadingPath + "/js/pdf.worker.js",
     kind: OptionKind.WORKER
   }
 };
@@ -220,7 +220,7 @@ const defaultOptions = {
     kind: OptionKind.VIEWER
   };
   defaultOptions.sandboxBundleSrc = {
-    value: "/hydro.pdf/js/pdf.sandbox.js",
+    value: window.loadingPath + "/js/pdf.sandbox.js",
     kind: OptionKind.VIEWER
   };
 }
@@ -15251,7 +15251,7 @@ function getViewerConfiguration() {
     errorWrapper,
     printContainer: document.getElementById("printContainer"),
     openFileInputName: "fileInput",
-    debuggerScriptPath: "/hydro.pdf/js/debugger.js"
+    debuggerScriptPath: window.loadingPath + "/js/debugger.js"
   };
 }
 

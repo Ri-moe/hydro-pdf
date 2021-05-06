@@ -6,7 +6,7 @@ PDF preview plugin for [Hydro](https://github.com/hydro-dev/Hydro), using [PDF.j
 
 ## 安装
 
-使用 Yarn 安装本插件，安装的版本应 **`>=1.0.3`**。
+使用 Yarn 安装本插件，安装的版本应 **`>=1.0.4`**，否则有 XSS 风险。
 
 对于全局安装 Hydro 的用户（如使用一键脚本）：
 
@@ -50,3 +50,7 @@ pm2 restart hydrooj
 ```
 
 这个例子一般无法正常工作，除非你正在 `hydro.org.cn` 中进行尝试。这是因为 CORS Policy 阻止了不被允许的跨域请求。
+
+## 配置
+
+hydro.pdf 提供 `loadingPath` 配置项，用于自定义资源加载来源，默认为 jsDelivr 源，留空将自动使用本地源。你也可以自定义其他加载源。

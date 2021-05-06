@@ -30,18 +30,19 @@ See https://github.com/adobe-type-tools/cmap-resources
   <title>Hydro.pdf</title>
 
 
-  <link rel="stylesheet" href="/hydro.pdf/css/viewer.css">
+  <link rel="stylesheet" href="{{ loadingPath }}/css/viewer.css">
 
   <script>
     window.pdfUrl = '{{ url }}';
+    window.loadingPath = '{{ loadingPath }}';
   </script>
 
   <!-- This snippet is used in production (included from viewer.html) -->
-  <link rel="resource" type="application/l10n" href="/hydro.pdf/locale/locale.properties">
-  <script src="/hydro.pdf/js/pdf.js"></script>
+  <link rel="resource" type="application/l10n" href="{{ loadingPath }}/locale/locale.properties">
+  <script src="{{ loadingPath }}/js/pdf.js"></script>
 
 
-  <script src="/hydro.pdf/js/viewer.js"></script>
+  <script src="{{ loadingPath }}/js/viewer.js"></script>
 
 </head>
 

@@ -1,0 +1,5 @@
+loadingPath:
+  type: text
+  name: loadingPath
+  desc: Resource loading path (leave blank to use local source)
+  default: https://cdn.jsdelivr.net/gh/Ri-moe/hydro.pdf/public/hydro.pdf
