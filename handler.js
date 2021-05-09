@@ -3,15 +3,15 @@ const system = global.Hydro.model.system;
 
 class HydroPDFHandler extends Handler {
     async get({ url }) {
-        const path = system.get('hydro.pdf.loadingPath')?.trim();
-        const loadingPath = path || '/hydro.pdf';
+        const path = system.get('hydro-pdf.loadingPath')?.trim();
+        const loadingPath = path || '/hydro-pdf';
         this.response.body = { url: decodeURIComponent(url).replace(/\\/g, "\\\\").replace(/'/g, "\\'"), loadingPath };
         this.response.template = 'viewer.html';
     }
 }
 
 async function apply() {
-    Route('hydro_pdf', '/hydro.pdf/:url', HydroPDFHandler);
+    Route('hydro_pdf', '/hydro-pdf/:url', HydroPDFHandler);
 }
 
-global.Hydro.handler['hydro.pdf'] = apply;
+global.Hydro.handler['hydro-pdf'] = apply;

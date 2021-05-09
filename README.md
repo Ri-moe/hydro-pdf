@@ -6,21 +6,21 @@ PDF preview plugin for [Hydro](https://github.com/hydro-dev/Hydro), using [PDF.j
 
 ## 安装
 
-使用 Yarn 安装本插件，安装的版本应 **`>=1.0.4`**，否则有 XSS 风险。
+使用 Yarn 安装本插件。
 
 对于全局安装 Hydro 的用户（如使用一键脚本）：
 
 ```bash
-yarn global add hydro.pdf
-hydrooj addon add hydro.pdf
+yarn global add hydro-pdf
+hydrooj addon add hydro-pdf
 ```
 
 对于自定义安装 Hydro 的用户：
 
 ```bash
 cd path/to/Hydro
-yarn add hydro.pdf
-hydrooj addon add hydro.pdf
+yarn add hydro-pdf
+hydrooj addon add hydro-pdf
 ```
 
 其中 `path/to/Hydro` 改为 Hydro 的安装目录。
