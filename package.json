@@ -1,5 +1,5 @@
 {
-  "name": "hydropdf",
+  "name": "hydro-pdf-preview",
   "version": "1.0.0",
   "description": "PDF preview plugin for Hydro, using PDF.js",
   "main": "package.json",
