@@ -14,4 +14,4 @@ async function apply() {
     Route('hydro_pdf', '/hydro-pdf/:url', HydroPDFHandler);
 }
 
-global.Hydro.handler['hydro-pdf'] = apply;
+global.Hydro.handler['hydropdf'] = apply;
