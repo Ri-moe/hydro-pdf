@@ -6,7 +6,7 @@ PDF preview plugin for [Hydro](https://github.com/hydro-dev/Hydro), using [PDF.j
 
 ## 安装
 
-使用 Yarn 安装本插件。
+使用 Yarn 安装本插件，安装的版本应 **`>=1.0.1`**。
 
 对于全局安装 Hydro 的用户（如使用一键脚本）：
 

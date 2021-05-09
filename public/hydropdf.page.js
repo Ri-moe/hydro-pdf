@@ -10,7 +10,7 @@
             const iframe = document.createElement('iframe');
             iframe.src = `/hydro-pdf/${encodeURIComponent(encodeURIComponent(url))}`;
             iframe.width = '100%';
-            iframe.style.minHeight = '100vh';
+            iframe.style.minHeight = '90vh';
             iframe.style.border = 'none';
             $(element).html('').append(iframe);
         });
