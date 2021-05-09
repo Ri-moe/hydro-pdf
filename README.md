@@ -11,16 +11,16 @@ PDF preview plugin for [Hydro](https://github.com/hydro-dev/Hydro), using [PDF.j
 对于全局安装 Hydro 的用户（如使用一键脚本）：
 
 ```bash
-yarn global add hydro-pdf
-hydrooj addon add hydro-pdf
+yarn global add hydro-pdf-preview
+hydrooj addon add hydro-pdf-preview
 ```
 
 对于自定义安装 Hydro 的用户：
 
 ```bash
 cd path/to/Hydro
-yarn add hydro-pdf
-hydrooj addon add hydro-pdf
+yarn add hydro-pdf-preview
+hydrooj addon add hydro-pdf-preview
 ```
 
 其中 `path/to/Hydro` 改为 Hydro 的安装目录。
